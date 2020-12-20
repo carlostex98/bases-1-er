@@ -1,4 +1,3 @@
-
 create table areas(
     id_area int primary key ,
     nombre_area varchar(220)
@@ -104,3 +103,5 @@ create table llamadas_atencion(
     foreign key (cui_empleado_fk) references personal(cui),
     foreign key (id_seguro_fk) references seguros(id_seguro)
 );
+
+alter table polizas auto_increment = 1000;
